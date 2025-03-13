@@ -27,7 +27,7 @@ DB_USERNAME=username
 DB_PASSWORD=password
 DB_DATABASE=dbname
 JWT_SECRET=wt_secret
-
+```
 ## Compile and run the project
 
 ```bash
