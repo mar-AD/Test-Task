@@ -5,6 +5,12 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+
+  app.enableCors({
+    origin: 'http://localhost:5173', 
+    credentials: true, // Allow cookies & authentication headers
+  });
+
   const config = new DocumentBuilder()
     .setTitle('Auth API')
     .setDescription('API for user authentication')

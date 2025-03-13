@@ -8,9 +8,9 @@ export class JwtUtil {
 
 
   generateAccessToken (payload: JwtPayload): string  {
-    console.log('Generating access token...');
+    console.log('generating access token...');
     try {
-      const token = this.jwtService.sign(payload, { expiresIn: '1h' });
+      const token = this.jwtService.sign(payload, { expiresIn: '2m' });
       console.log('Access token generated successfully.');
       return token;
     } catch (error) {

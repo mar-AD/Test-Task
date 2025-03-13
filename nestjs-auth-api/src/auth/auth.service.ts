@@ -1,4 +1,4 @@
-import { HttpCode, HttpStatus, Injectable, InternalServerErrorException, NotFoundException, UnauthorizedException } from '@nestjs/common';
+import { Injectable, InternalServerErrorException, NotFoundException, UnauthorizedException } from '@nestjs/common';
 import { UserEntity } from './user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -48,6 +48,7 @@ export class AuthService {
         }
     
         return {
+            id: user.id,
             email: user.email,
             createdAt: user.createdAt,
         };

@@ -3,6 +3,7 @@ export interface LoginResponse {
 }
 
 export interface FetchUserResponse {
+    id: string;
     email: string;
     createdAt: Date
 }
