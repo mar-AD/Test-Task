@@ -16,6 +16,18 @@ It's recommended to use the same versions to prevent potential compatibility iss
 $ npm install
 ```
 
+## Environment Variables
+
+create a `.env` file in the root of the project and add the following configuration:
+
+```ini
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=username
+DB_PASSWORD=password
+DB_DATABASE=dbname
+JWT_SECRET=wt_secret
+
 ## Compile and run the project
 
 ```bash
